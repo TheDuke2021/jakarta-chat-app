@@ -45,9 +45,7 @@ function processReceivedMessage(event) {
 		const msgToPrint = date + " " + userName + ": " + text; 
 		outputBox.append(msgToPrint + "\n");
 		outputBox.scrollTop = 999999;
-		console.log("RECEIVED AND PROCESSED CHAT MESSAGE");
 	}else if(message.type == "users") {
-		console.log("RECEIVED AND PROCESSED USERS MESSAGE");
 		const userList = message.userlist;
 		const unsortedList = document.createElement("ul");
 		document.querySelector(".online-users-container > ul").remove();
